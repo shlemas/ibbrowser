@@ -12,9 +12,8 @@ TARGET = ibbrowser
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        MainWindow.cpp
+SOURCES += main.cpp
 
-HEADERS  += MainWindow.h
+HEADERS  +=
 
-FORMS    += MainWindow.ui
+FORMS    +=

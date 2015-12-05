@@ -1,11 +1,14 @@
-#include "MainWindow.h"
 #include <QApplication>
+#include <QWebView>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    QWebView webView;
+
+    webView.setWindowFlags(webView.windowFlags() | Qt::FramelessWindowHint);
+    webView.load(QUrl::fromUserInput("google.com"));
+    webView.show();
 
     return a.exec();
 }
