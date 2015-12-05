@@ -6,6 +6,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    setWindowFlags(windowFlags() | Qt::FramelessWindowHint);
+
+    ui->webView->load(QUrl("http://www.google.com/"));
 }
 
 MainWindow::~MainWindow()
